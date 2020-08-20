@@ -5,22 +5,22 @@ from tg_bot import dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
 
 SFW_STRINGS = (
-    "പോടാ പട്ടി",
-    "ഡാ പന്നി ",
-    "പുന്നാര മോനെ",
-    "പോടാ മാക്രി",
-    "പോടാ നാറി",
-    "വാടാ ... പട്ടീ",
-    "പോയി ചാവടാ",
-    "നീ പോടാ കാട്ടുകോഴി",
-    "പോയി ചത്തൂടെ നിനക്ക്",
-    "കോപ്പേ വല്യ ബഹളം വേണ്ട",
-    "വല്യ മലരനാണല്ലോടാ നീ",
-    "മണ്ണുണ്ണി",
-    "ഡാ പന്നക്കിളവ",
-    " നിന്റെ കുഞ്ഞമ്മേടെ നായർ",
-    "നിന്റെ അപ്പൂപ്പനോട്‌ പോയി പറ",
-    "പോ മലരേ"
+    "Jaa na Bsdk, gaand mara jaake.",
+    "Tu paidaishi chutiya hai ki koi course kiya hai? ",
+    "I came to know that some shops were selling your ass for 69$",
+    "The world would have been so smooth if your dad had just pulled out",
+    "And the truth is, you're a fucking cunt",
+    "What else can you do other than spreading your legs?",
+    "Jaa na Gandu",
+    "Aand ka na Gaand ka, Gyaan jhaare pure Brahmand ka",
+    "Dhaat teri maa ki ch*t",
+    "Gaand se tatti nikalke jaadugar samajhta hai apne aap ko?",
+    "Bitches be trippin'",
+    "Please fuck off bitch, and get a life",
+    "Tu aise nhi maanega - Mat maan, maa chuda",
+    "Tujhse zada sundar teri jali hui gaand hai",
+    "Ye aapki Randikhana nhi hai, kripya yaha se dur rahe",
+    "I'm a good girl, I don't abuse. But you're a bitch."
   )
 
 @run_async
