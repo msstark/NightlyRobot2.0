@@ -71,7 +71,7 @@ def steal(bot: Bot, update: Update, args: List[str]):
         elif msg.reply_to_message.document:
             file_id = msg.reply_to_message.document.file_id
         else:
-            msg.reply_text("Yea, I can't steal that.")
+            msg.reply_text("BOOM, I can't steal that.")
         stolen_file = bot.get_file(file_id)
         stolen_file.download('stolensticker.png')
         if args:
@@ -205,7 +205,7 @@ def makepack_internal(msg, user, png_sticker, emoji, bot, packname, packnum):
         extra_version = ""
         if packnum > 0:
             extra_version = " " + str(packnum)
-        success = bot.create_new_sticker_set(user.id, packname, f"{name}'s Sticker Pack" + extra_version,
+        success = bot.create_new_sticker_set(user.id, packname, f"{name}'s C.A.M.I.L.L.A Pack" + extra_version,
                                              png_sticker=png_sticker,
                                              emojis=emoji)
     except TelegramError as e:
@@ -217,12 +217,12 @@ def makepack_internal(msg, user, png_sticker, emoji, bot, packname, packnum):
             msg.reply_text("Contact me in PM first.", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
                 text="Start", url=f"t.me/{bot.username}")]]))
         elif e.message == "Internal Server Error: created sticker set not found (500)":
-                msg.reply_text("Sticker pack successfully created! Get it [here](t.me/addstickers/%s)" % packname,
+                msg.reply_text("Sticker pack successfully created by **C.A.M.I.L.L.A** ! Get it [here](t.me/addstickers/%s)" % packname,
                        parse_mode=ParseMode.MARKDOWN)
         return
 
     if success:
-        msg.reply_text("Sticker pack successfully created! Get it [here](t.me/addstickers/%s)" % packname,
+        msg.reply_text("Sticker pack successfully created by **C.A.M.I.L.L.A** ! Get it [here](t.me/addstickers/%s)" % packname,
                        parse_mode=ParseMode.MARKDOWN)
     else:
         msg.reply_text("Failed to create sticker pack.")
