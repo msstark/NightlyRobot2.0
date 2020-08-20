@@ -1,14 +1,13 @@
-# Hyper X v2.0 // open source repo
+# C.A.M.I.L.L.A
 
 
-# Use at your own risk
+## The Cutest Group Management Bot ever, with Cool & Fun Features
 
 
-[Contact me](https://t.me/imperialxx)
+[Contact me](https://t.me/BeatsToHell913)
 
 
- Hint : Telegram is missing 
-       : Python needs telegram -()-
+ Hint : Made with Python 3.8.5
  
 
 Click below to deploy
