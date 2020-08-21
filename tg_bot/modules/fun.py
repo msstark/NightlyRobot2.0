@@ -31,43 +31,30 @@ def slap(bot: Bot, update: Update, args: List[str]):
     curr_user = html.escape(message.from_user.first_name)
     user_id = extract_user(message, args)
 
-    if user_id == 1156169466:
-        temp = random.choice(fun_strings.SLAP_alluka_TEMPLATES)
-
-        if type(temp) == list:
-            if temp[2] == "tmute":
-                if is_user_admin(chat, message.from_user.id):
-
-                    reply_text(temp[1])
-                    return
-
-                mutetime = int(time.time() + 60)
-                bot.restrict_chat_member(chat.id, message.from_user.id, until_date=mutetime, can_send_messages=False)
-                
-            reply_text(temp[0])
-        else:
-            reply_text(temp)
-        return
-
-    if user_id:
-
-        slapped_user = bot.get_chat(user_id)
-        user1 = curr_user
-        
-        user2 = html.escape(slapped_user.first_name)
-
+    if (user_id == 1269655123) or (user_id == 1018289116):
+        update.message.reply_text("LoL you noob, I won't slap my master, got that?")
     else:
-        user1 = bot.first_name
-        user2 = curr_user
+   
 
-    temp = random.choice(fun_strings.SLAP_TEMPLATES)
-    item = random.choice(fun_strings.ITEMS)
-    hit = random.choice(fun_strings.HIT)
-    throw = random.choice(fun_strings.THROW)
+        if user_id:
 
-    reply = temp.format(user1=user1, user2=user2, item=item, hits=hit, throws=throw)
+            slapped_user = bot.get_chat(user_id)
+            user1 = curr_user
+        
+            user2 = html.escape(slapped_user.first_name)
 
-    reply_text(reply, parse_mode=ParseMode.HTML)
+        else:
+            user1 = bot.first_name
+            user2 = curr_user
+
+        temp = random.choice(fun_strings.SLAP_TEMPLATES)
+        item = random.choice(fun_strings.ITEMS)
+        hit = random.choice(fun_strings.HIT)
+        throw = random.choice(fun_strings.THROW)
+
+        reply = temp.format(user1=user1, user2=user2, item=item, hits=hit, throws=throw)
+
+        reply_text(reply, parse_mode=ParseMode.HTML)
 
 
 @run_async
