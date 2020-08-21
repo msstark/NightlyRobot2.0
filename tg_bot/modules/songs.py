@@ -36,7 +36,7 @@ def sing(bot: Bot, update: Update):
       message.reply_text(random.choice(SFW_STRINGS))
 
 __help__ = """
-- /song  ചില മലയാളം പാട്ടുകളുടെ ആദ്യ വരികൾ ലഭിക്കും.(old)
+- /song  Sings a song for ya!
 """
 
 __mod_name__ = "Sing Commands"
